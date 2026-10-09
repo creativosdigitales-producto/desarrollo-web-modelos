@@ -1,0 +1,420 @@
+/* ==========================================
+   DULCE CACAO - Proyecto modelo
+   Paleta: marrones y beiges de chocolatería,
+   con un toque de rosa frambuesa para los detalles.
+   ========================================== */
+
+
+/* ---------- Página ---------- */
+/* Clase 2.1: selector de etiqueta y colores. Clase 2.2: fuente y espacio entre renglones */
+body {
+    margin: 0;
+    background-color: #FBF6EF;
+    color: #3B2418;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ---------- Encabezado ---------- */
+/* Clase 3.2: Flexbox para poner el logo y el menú en una fila */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px;
+    background-color: #FFFDF9;
+    box-shadow: 0 4px 0 #D9BFA0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icono {
+    width: 48px;
+}
+
+.logo-nombre {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+    gap: 8px;
+}
+
+/* Clase 2.2: text-decoration quita el subrayado de los enlaces */
+.menu-enlace {
+    padding: 8px 16px;
+    border-radius: 20px;
+    color: #3B2418;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Clase 3.3: efecto al pasar el mouse */
+.menu-enlace:hover {
+    background-color: #F3E6D6;
+}
+
+
+/* ---------- Presentación ---------- */
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 70px 60px;
+    background-color: #F3E6D6;
+}
+
+.presentacion-texto {
+    width: 45%;
+}
+
+.presentacion-titulo {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1.15;
+}
+
+.presentacion-descripcion {
+    font-size: 17px;
+}
+
+/* La imagen con forma de arco, como la vidriera de una chocolatería */
+/* Clase 2.3: bordes, esquinas redondeadas y object-fit */
+.presentacion-imagen {
+    width: 36%;
+    height: 440px;
+    object-fit: cover;
+    border: 8px solid #FFFDF9;
+    border-radius: 250px 250px 30px 30px;
+}
+
+/* Un enlace con aspecto de botón */
+/* Clase 3.1: display inline-block. Clase 2.4: padding */
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 30px;
+    border-radius: 30px;
+    background-color: #6B4430;
+    color: #FBF6EF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    background-color: #3B2418;
+}
+
+
+/* ---------- Títulos de sección ---------- */
+.titulo-seccion {
+    margin: 0;
+    line-height: 1.2;
+    font-family: Georgia, serif;
+    font-size: 34px;
+    text-align: center;
+}
+
+.subtitulo-seccion {
+    margin-top: 6px;
+    margin-bottom: 40px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* ---------- Productos ---------- */
+.productos {
+    padding: 70px 40px;
+    background-color: #EADBC8;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Clase 2.3: ancho, borde y esquinas. Clase 2.4: padding y box-sizing */
+.tarjeta {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #FFFDF9;
+    border: 3px solid #D9BFA0;
+    border-radius: 24px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Clase 3.3: la tarjeta crece y aparece una sombra */
+.tarjeta:hover {
+    transform: scale(1.04);
+    box-shadow: 0 12px 24px #C9AD8E;
+}
+
+/* Clase 2.3: object-fit evita que la foto se deforme */
+.tarjeta-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.tarjeta-titulo {
+    margin-bottom: 4px;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.tarjeta-texto {
+    margin-top: 0;
+}
+
+.precio {
+    margin: 0;
+    color: #B8476A;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+/* ---------- Nosotros ---------- */
+.nosotros {
+    padding: 70px 40px;
+}
+
+/* list-style: none quita las viñetas de la lista */
+/* Clase 2.4: margin y padding en 0 quitan el espacio que trae la lista */
+.lista-beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.beneficio {
+    width: 220px;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    background-color: #F3E6D6;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.beneficio-icono {
+    width: 64px;
+}
+
+.beneficio-titulo {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 17px;
+}
+
+.beneficio-texto {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* ---------- Pedido ---------- */
+.pedido {
+    padding: 70px 40px;
+    background-color: #EADBC8;
+}
+
+/* Clase 3.2: flex-direction column pone los campos uno debajo del otro */
+/* Clase 2.4: margin 0 auto centra el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #FFFDF9;
+    border-radius: 24px;
+}
+
+.etiqueta {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.campo {
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #E6D3BC;
+    border-radius: 12px;
+    color: #3B2418;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.campo-mensaje {
+    height: 110px;
+}
+
+/* border: 0 quita el borde que el navegador le pone al botón */
+.boton-enviar {
+    margin-top: 16px;
+    padding: 14px;
+    border: 0;
+    border-radius: 30px;
+    background-color: #6B4430;
+    color: #FBF6EF;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.boton-enviar:hover {
+    transform: scale(1.03);
+    background-color: #3B2418;
+}
+
+
+/* ---------- Pie de página ---------- */
+.pie {
+    padding: 50px 40px 30px 40px;
+    background-color: #3B2418;
+    color: #F3E6D6;
+    text-align: center;
+}
+
+.pie-nombre {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.pie-lema {
+    margin-top: 4px;
+}
+
+.datos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dato-icono {
+    width: 28px;
+}
+
+.dato-texto {
+    margin: 0;
+}
+
+.pie-enlace {
+    color: #F2C9D3;
+    font-weight: bold;
+}
+
+.pie-enlace:hover {
+    color: #FFFDF9;
+}
+
+.creditos {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+
+/* ---------- Adaptación al celular ---------- */
+/* Clase 3.4: estas reglas se activan en pantallas de 768px o menos */
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+    }
+
+    .menu {
+        gap: 2px;
+    }
+
+    .menu-enlace {
+        padding: 6px 10px;
+        font-size: 13px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 24px;
+    }
+
+    .presentacion-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentacion-titulo {
+        font-size: 32px;
+    }
+
+    .presentacion-imagen {
+        width: 80%;
+        height: 320px;
+    }
+
+    .titulo-seccion {
+        font-size: 26px;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beneficio {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .datos-contacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+}

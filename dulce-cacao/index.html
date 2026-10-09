@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dulce Cacao | Chocolates artesanales</title>
+</head>
+<body>
+
+    <!-- ========== ENCABEZADO ========== -->
+    <!-- Clase 1.5: header y nav. Clase 1.3: enlaces a secciones de la misma página -->
+    <header class="encabezado">
+        <div class="logo">
+            <img class="logo-icono" src="https://img.icons8.com/color/96/chocolate-bar.png" alt="Ícono de una tableta de chocolate" width="48">
+            <h1 class="logo-nombre">Dulce Cacao</h1>
+        </div>
+        <nav class="menu">
+            <a class="menu-enlace" href="#inicio">Inicio</a>
+            <a class="menu-enlace" href="#productos">Chocolates</a>
+            <a class="menu-enlace" href="#nosotros">Nosotros</a>
+            <a class="menu-enlace" href="#pedido">Pedidos</a>
+            <a class="menu-enlace" href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== PRESENTACIÓN ========== -->
+        <!-- Clase 1.2: títulos y párrafos. Clase 1.4: imagen -->
+        <section class="presentacion" id="inicio">
+            <div class="presentacion-texto">
+                <h2 class="presentacion-titulo">Chocolates hechos a mano, para regalar o darte un gusto</h2>
+                <p class="presentacion-descripcion">Preparamos bombones, tabletas y chocolates con formas en pequeñas tandas, con cacao de calidad y mucho cariño. Elige tus sabores favoritos y te los llevamos a tu casa.</p>
+                <a class="boton" href="#pedido">Hacer un pedido</a>
+            </div>
+            <img class="presentacion-imagen" src="https://images.pexels.com/photos/38106357/pexels-photo-38106357.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Chocolates surtidos con coberturas de colores" width="420">
+        </section>
+
+        <!-- ========== PRODUCTOS ========== -->
+        <!-- Clase 1.5: section y div. Clase 2.3: tarjetas. Clase 3.2: tarjetas en fila con Flexbox -->
+        <section class="productos" id="productos">
+            <h2 class="titulo-seccion">Nuestros chocolates</h2>
+            <p class="subtitulo-seccion">Tres maneras de disfrutar el cacao. Todos se pueden personalizar.</p>
+
+            <div class="contenedor-tarjetas">
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/10972833/pexels-photo-10972833.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Bombones de chocolate surtidos" width="260">
+                    <h3 class="tarjeta-titulo">Bombones surtidos</h3>
+                    <p class="tarjeta-texto">Rellenos de dulce de leche, frutilla, menta y avellanas. Caja de 12 unidades.</p>
+                    <p class="precio">$4.500</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/4110097/pexels-photo-4110097.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tabletas de chocolate blanco, con leche y amargo" width="260">
+                    <h3 class="tarjeta-titulo">Tabletas de sabores</h3>
+                    <p class="tarjeta-texto">Chocolate con leche, amargo o blanco, con almendras o maní. Tableta de 100 gramos.</p>
+                    <p class="precio">$2.800</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/11716935/pexels-photo-11716935.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Chocolates con forma de corazón en una caja" width="260">
+                    <h3 class="tarjeta-titulo">Chocolates con formas</h3>
+                    <p class="tarjeta-texto">Corazones, estrellas y ositos para cumpleaños y fechas especiales. Bolsita de 10.</p>
+                    <p class="precio">$3.200</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <!-- Clase 1.3: lista desordenada. Clase 3.2: Flexbox -->
+        <section class="nosotros" id="nosotros">
+            <h2 class="titulo-seccion">¿Por qué elegir Dulce Cacao?</h2>
+
+            <ul class="lista-beneficios">
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/chef-hat.png" alt="Ícono de gorro de cocinero" width="64">
+                    <h3 class="beneficio-titulo">Hecho a mano</h3>
+                    <p class="beneficio-texto">Cada chocolate se prepara a mano en nuestra cocina.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/natural-food.png" alt="Ícono de una hoja" width="64">
+                    <h3 class="beneficio-titulo">Ingredientes naturales</h3>
+                    <p class="beneficio-texto">Sin conservantes ni colorantes artificiales.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/in-transit.png" alt="Ícono de un camión de reparto" width="64">
+                    <h3 class="beneficio-titulo">Envío a domicilio</h3>
+                    <p class="beneficio-texto">Llevamos tu pedido a tu casa en el día.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/gift.png" alt="Ícono de una caja de regalo" width="64">
+                    <h3 class="beneficio-titulo">Cajas para regalo</h3>
+                    <p class="beneficio-texto">Armamos cajas con moño y tarjeta personalizada.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ========== PEDIDO ========== -->
+        <!-- Clase 1.6: formulario. Este formulario no envía datos: eso es tarea del Back End -->
+        <section class="pedido" id="pedido">
+            <h2 class="titulo-seccion">Haz tu pedido</h2>
+            <p class="subtitulo-seccion">Completa el formulario y te escribimos para confirmar.</p>
+
+            <form class="formulario">
+                <label class="etiqueta">Tu nombre</label>
+                <input class="campo" type="text" placeholder="Ej.: Sofía López">
+
+                <label class="etiqueta">Correo electrónico</label>
+                <input class="campo" type="email" placeholder="tucorreo@ejemplo.com">
+
+                <label class="etiqueta">Cantidad de cajas</label>
+                <input class="campo" type="number" placeholder="1">
+
+                <label class="etiqueta">¿Qué sabores te gustarían?</label>
+                <textarea class="campo campo-mensaje" placeholder="Ej.: 6 bombones de dulce de leche y 6 de frutilla"></textarea>
+
+                <button class="boton-enviar">Enviar pedido</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <!-- Clase 1.5: footer. Clase 1.3: enlaces con target="_blank". Los datos son inventados -->
+    <footer class="pie" id="contacto">
+        <h2 class="pie-nombre">Dulce Cacao</h2>
+        <p class="pie-lema">Chocolates artesanales desde nuestra cocina a tu mesa.</p>
+
+        <div class="datos-contacto">
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/phone.png" alt="Ícono de teléfono" width="28">
+                <p class="dato-texto">555-123-4567</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/new-post.png" alt="Ícono de correo" width="28">
+                <p class="dato-texto">info@dulcecacao.com</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/marker.png" alt="Ícono de ubicación" width="28">
+                <p class="dato-texto">Calle de los Dulces 123</p>
+            </div>
+        </div>
+
+        <p class="pie-redes">
+            <a class="pie-enlace" href="https://www.instagram.com" target="_blank">Síguenos en Instagram</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

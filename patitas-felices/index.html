@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Patitas Felices | Paseo y cuidado de mascotas</title>
+</head>
+<body>
+
+    <!-- ========== ENCABEZADO ========== -->
+    <!-- Clase 1.5: header y nav. Clase 1.3: enlaces a secciones de la misma página -->
+    <header class="encabezado">
+        <div class="logo">
+            <img class="logo-icono" src="https://img.icons8.com/color/96/dog.png" alt="Ícono de un perro" width="48">
+            <h1 class="logo-nombre">Patitas Felices</h1>
+        </div>
+        <nav class="menu">
+            <a class="menu-enlace" href="#inicio">Inicio</a>
+            <a class="menu-enlace" href="#servicios">Servicios</a>
+            <a class="menu-enlace" href="#nosotros">Nosotros</a>
+            <a class="menu-enlace" href="#reserva">Reservas</a>
+            <a class="menu-enlace" href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== PRESENTACIÓN ========== -->
+        <!-- Clase 1.2: títulos y párrafos. Clase 1.4: imagen -->
+        <section class="presentacion" id="inicio">
+            <div class="presentacion-texto">
+                <h2 class="presentacion-titulo">Paseos y cuidados para que tu mascota esté feliz mientras no estás</h2>
+                <p class="presentacion-descripcion">Llevamos a tu perro a pasear por el barrio o al parque, y lo cuidamos en casa cuando sales de viaje. Somos un equipo pequeño, responsable y muy amante de los animales.</p>
+                <a class="boton" href="#reserva">Reservar un paseo</a>
+            </div>
+            <img class="presentacion-imagen" src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Un perro feliz mirando a la cámara" width="380">
+        </section>
+
+        <!-- ========== SERVICIOS ========== -->
+        <!-- Clase 1.5: section y div. Clase 2.3: tarjetas. Clase 3.2: tarjetas en fila con Flexbox -->
+        <section class="servicios" id="servicios">
+            <h2 class="titulo-seccion">Nuestros servicios</h2>
+            <p class="subtitulo-seccion">Elige el que mejor se adapte a tu mascota y a tu día.</p>
+
+            <div class="contenedor-tarjetas">
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/35348283/pexels-photo-35348283.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Perro con correa paseando por el parque" width="260">
+                    <h3 class="tarjeta-titulo">Paseo corto</h3>
+                    <p class="tarjeta-texto">30 minutos por el barrio. Ideal para cachorros y perros mayores.</p>
+                    <p class="precio">$3.000 por paseo</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/7210535/pexels-photo-7210535.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Paseador con un grupo de perros en un parque" width="260">
+                    <h3 class="tarjeta-titulo">Paseo en grupo</h3>
+                    <p class="tarjeta-texto">Una hora en el parque con hasta cuatro amigos peludos para correr y jugar.</p>
+                    <p class="precio">$5.000 por paseo</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/9986354/pexels-photo-9986354.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Persona cepillando a un perro dentro de una casa" width="260">
+                    <h3 class="tarjeta-titulo">Cuidado en casa</h3>
+                    <p class="tarjeta-texto">Visitamos a tu mascota cuando no estás: comida, agua, juegos y mimos.</p>
+                    <p class="precio">$6.000 por visita</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <!-- Clase 1.3: lista desordenada. Clase 3.2: Flexbox -->
+        <section class="nosotros" id="nosotros">
+            <h2 class="titulo-seccion">¿Por qué elegir Patitas Felices?</h2>
+
+            <ul class="lista-beneficios">
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/security-checked.png" alt="Ícono de un escudo con una marca de verificación" width="64">
+                    <h3 class="beneficio-titulo">Paseadores de confianza</h3>
+                    <p class="beneficio-texto">Conocemos a cada perro y sus necesidades.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/group.png" alt="Ícono de un grupo" width="64">
+                    <h3 class="beneficio-titulo">Grupos pequeños</h3>
+                    <p class="beneficio-texto">Nunca paseamos más de cuatro perros a la vez.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/camera.png" alt="Ícono de una cámara de fotos" width="64">
+                    <h3 class="beneficio-titulo">Fotos del paseo</h3>
+                    <p class="beneficio-texto">Te enviamos fotos para que veas cómo la pasó.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/clock.png" alt="Ícono de un reloj" width="64">
+                    <h3 class="beneficio-titulo">Horarios flexibles</h3>
+                    <p class="beneficio-texto">Mañana, tarde o fines de semana.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ========== RESERVA ========== -->
+        <!-- Clase 1.6: formulario. Este formulario no envía datos: eso es tarea del Back End -->
+        <section class="reserva" id="reserva">
+            <h2 class="titulo-seccion">Reserva un paseo</h2>
+            <p class="subtitulo-seccion">Completa tus datos y te escribimos para coordinar el día y la hora.</p>
+
+            <form class="formulario">
+                <label class="etiqueta">Tu nombre</label>
+                <input class="campo" type="text" placeholder="Ej.: Martín Gómez">
+
+                <label class="etiqueta">Correo electrónico</label>
+                <input class="campo" type="email" placeholder="tucorreo@ejemplo.com">
+
+                <label class="etiqueta">Nombre de tu mascota</label>
+                <input class="campo" type="text" placeholder="Ej.: Toby">
+
+                <label class="etiqueta">Paseos por semana</label>
+                <input class="campo" type="number" placeholder="3">
+
+                <label class="etiqueta">Cuéntanos sobre tu mascota</label>
+                <textarea class="campo campo-mensaje" placeholder="Ej.: Es un perro mediano, tiene 4 años y se lleva bien con otros perros"></textarea>
+
+                <button class="boton-enviar">Reservar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <!-- Clase 1.5: footer. Clase 1.3: enlaces con target="_blank". Los datos son inventados -->
+    <footer class="pie" id="contacto">
+        <h2 class="pie-nombre">Patitas Felices</h2>
+        <p class="pie-lema">Paseos con cariño, todos los días.</p>
+
+        <div class="datos-contacto">
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/phone.png" alt="Ícono de teléfono" width="28">
+                <p class="dato-texto">555-987-6543</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/new-post.png" alt="Ícono de correo" width="28">
+                <p class="dato-texto">info@patitasfelices.com</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/marker.png" alt="Ícono de ubicación" width="28">
+                <p class="dato-texto">Avenida de los Parques 456</p>
+            </div>
+        </div>
+
+        <p class="pie-redes">
+            <a class="pie-enlace" href="https://www.instagram.com" target="_blank">Síguenos en Instagram</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

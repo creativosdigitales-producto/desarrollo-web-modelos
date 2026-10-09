@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Pixel Zone | Tienda gamer</title>
+</head>
+<body>
+
+    <!-- ========== ENCABEZADO ========== -->
+    <!-- Clase 1.5: header y nav. Clase 1.3: enlaces a secciones de la misma página -->
+    <header class="encabezado">
+        <div class="logo">
+            <img class="logo-icono" src="https://img.icons8.com/color/96/controller.png" alt="Ícono de un joystick" width="44">
+            <h1 class="logo-nombre">PIXEL ZONE</h1>
+        </div>
+        <nav class="menu">
+            <a class="menu-enlace" href="#inicio">Inicio</a>
+            <a class="menu-enlace" href="#productos">Productos</a>
+            <a class="menu-enlace" href="#nosotros">Nosotros</a>
+            <a class="menu-enlace" href="#consulta">Consultas</a>
+            <a class="menu-enlace" href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== PRESENTACIÓN ========== -->
+        <!-- Clase 1.2: títulos y párrafos. Clase 1.4: imagen -->
+        <section class="presentacion" id="inicio">
+            <div class="presentacion-texto">
+                <p class="etiqueta-superior">// TIENDA GAMER</p>
+                <h2 class="presentacion-titulo">Sube de nivel tu forma de jugar</h2>
+                <p class="presentacion-descripcion">Joysticks, auriculares y accesorios para jugar en tu PC o en tu consola. Te los enviamos a tu casa y puedes pagar en cuotas.</p>
+                <a class="boton" href="#productos">Ver productos</a>
+            </div>
+            <img class="presentacion-imagen" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Auriculares, joystick y teclado gamer iluminados con luces de colores" width="460">
+        </section>
+
+        <!-- ========== PRODUCTOS ========== -->
+        <!-- Clase 1.5: section y div. Clase 2.3: tarjetas. Clase 3.2: tarjetas en fila con Flexbox -->
+        <section class="productos" id="productos">
+            <h2 class="titulo-seccion">Productos destacados</h2>
+            <p class="subtitulo-seccion">Equipo elegido por jugadores, para jugadores.</p>
+
+            <div class="contenedor-tarjetas">
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/596750/pexels-photo-596750.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Joystick con luces LED azules" width="260">
+                    <h3 class="tarjeta-titulo">Joystick LED</h3>
+                    <p class="tarjeta-texto">Luces azules, vibración y un agarre cómodo para jugar durante horas.</p>
+                    <p class="precio">$45.000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/10670819/pexels-photo-10670819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Auriculares gamer con luces de neón sobre una laptop" width="260">
+                    <h3 class="tarjeta-titulo">Auriculares gamer</h3>
+                    <p class="tarjeta-texto">Sonido envolvente y micrófono para hablar con tu equipo mientras juegas.</p>
+                    <p class="precio">$38.000</p>
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjeta-imagen" src="https://images.pexels.com/photos/9742608/pexels-photo-9742608.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Auriculares y joystick sobre un escritorio" width="260">
+                    <h3 class="tarjeta-titulo">Combo jugador</h3>
+                    <p class="tarjeta-texto">Joystick y auriculares juntos, con un descuento especial por llevar los dos.</p>
+                    <p class="precio">$75.000</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== NOSOTROS ========== -->
+        <!-- Clase 1.3: lista desordenada. Clase 3.2: Flexbox -->
+        <section class="nosotros" id="nosotros">
+            <h2 class="titulo-seccion">¿Por qué comprar en Pixel Zone?</h2>
+
+            <ul class="lista-beneficios">
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/in-transit.png" alt="Ícono de un camión de reparto" width="64">
+                    <h3 class="beneficio-titulo">Envío rápido</h3>
+                    <p class="beneficio-texto">Recibe tu pedido en 48 horas.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/security-checked.png" alt="Ícono de un escudo con una marca de verificación" width="64">
+                    <h3 class="beneficio-titulo">Garantía de 6 meses</h3>
+                    <p class="beneficio-texto">Si algo falla, te lo cambiamos.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/bank-cards.png" alt="Ícono de tarjetas de pago" width="64">
+                    <h3 class="beneficio-titulo">Pago en cuotas</h3>
+                    <p class="beneficio-texto">Elige cómo pagar tu equipo nuevo.</p>
+                </li>
+                <li class="beneficio">
+                    <img class="beneficio-icono" src="https://img.icons8.com/color/96/customer-support.png" alt="Ícono de una persona con auriculares" width="64">
+                    <h3 class="beneficio-titulo">Atención gamer</h3>
+                    <p class="beneficio-texto">Te asesoramos para elegir lo mejor.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ========== CONSULTA ========== -->
+        <!-- Clase 1.6: formulario. Este formulario no envía datos: eso es tarea del Back End -->
+        <section class="consulta" id="consulta">
+            <h2 class="titulo-seccion">¿Tienes una consulta?</h2>
+            <p class="subtitulo-seccion">Escríbenos y te respondemos en menos de 24 horas.</p>
+
+            <form class="formulario">
+                <label class="etiqueta">Tu nombre o apodo gamer</label>
+                <input class="campo" type="text" placeholder="Ej.: NicoPlayer">
+
+                <label class="etiqueta">Correo electrónico</label>
+                <input class="campo" type="email" placeholder="tucorreo@ejemplo.com">
+
+                <label class="etiqueta">¿Qué producto te interesa?</label>
+                <input class="campo" type="text" placeholder="Ej.: Auriculares gamer">
+
+                <label class="etiqueta">Cantidad</label>
+                <input class="campo" type="number" placeholder="1">
+
+                <label class="etiqueta">Tu consulta</label>
+                <textarea class="campo campo-mensaje" placeholder="Ej.: ¿Los auriculares sirven para la consola?"></textarea>
+
+                <button class="boton-enviar">Enviar consulta</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ========== PIE DE PÁGINA ========== -->
+    <!-- Clase 1.5: footer. Clase 1.3: enlaces con target="_blank". Los datos son inventados -->
+    <footer class="pie" id="contacto">
+        <h2 class="pie-nombre">PIXEL ZONE</h2>
+        <p class="pie-lema">Tu próxima partida empieza aquí.</p>
+
+        <div class="datos-contacto">
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/phone.png" alt="Ícono de teléfono" width="28">
+                <p class="dato-texto">555-246-8100</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/new-post.png" alt="Ícono de correo" width="28">
+                <p class="dato-texto">info@pixelzone.com</p>
+            </div>
+            <div class="dato">
+                <img class="dato-icono" src="https://img.icons8.com/color/48/marker.png" alt="Ícono de ubicación" width="28">
+                <p class="dato-texto">Pasaje del Joystick 789</p>
+            </div>
+        </div>
+
+        <p class="pie-redes">
+            <a class="pie-enlace" href="https://www.instagram.com" target="_blank">Síguenos en Instagram</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>

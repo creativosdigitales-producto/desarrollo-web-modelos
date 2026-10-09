@@ -1,0 +1,443 @@
+/* ==========================================
+   PIXEL ZONE - Proyecto modelo
+   Paleta: fondo oscuro, cian neón como color principal
+   y magenta para los precios.
+   ========================================== */
+
+
+/* ---------- Página ---------- */
+/* Clase 2.1: selector de etiqueta y colores. Clase 2.2: fuente y espacio entre renglones */
+body {
+    margin: 0;
+    background-color: #0E0B1F;
+    color: #E8E6F5;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* ---------- Encabezado ---------- */
+/* Clase 3.2: Flexbox para poner el logo y el menú en una fila */
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 60px;
+    background-color: #15112B;
+    box-shadow: 0 2px 0 #2EE6D6;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icono {
+    width: 44px;
+}
+
+.logo-nombre {
+    margin: 0;
+    color: #2EE6D6;
+    font-family: "Courier New", monospace;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 8px;
+}
+
+/* Clase 2.2: text-decoration quita el subrayado de los enlaces */
+.menu-enlace {
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #E8E6F5;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Clase 3.3: efecto al pasar el mouse */
+.menu-enlace:hover {
+    background-color: #2A2350;
+    color: #2EE6D6;
+}
+
+
+/* ---------- Presentación ---------- */
+.presentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 60px;
+}
+
+.presentacion-texto {
+    width: 42%;
+}
+
+.etiqueta-superior {
+    margin: 0;
+    color: #2EE6D6;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.presentacion-titulo {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-family: "Courier New", monospace;
+    font-size: 46px;
+    line-height: 1.15;
+}
+
+.presentacion-descripcion {
+    color: #B9B4D6;
+    font-size: 17px;
+}
+
+/* La imagen brilla como una pantalla encendida */
+/* Clase 2.3: borde y object-fit. Clase 3.3: box-shadow de color crea el brillo */
+.presentacion-imagen {
+    width: 44%;
+    height: 380px;
+    object-fit: cover;
+    border: 3px solid #2EE6D6;
+    border-radius: 16px;
+    box-shadow: 0 0 40px #2EE6D6;
+}
+
+/* Un enlace con aspecto de botón */
+/* Clase 3.1: display inline-block. Clase 2.4: padding */
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 14px 30px;
+    border-radius: 8px;
+    background-color: #2EE6D6;
+    color: #0E0B1F;
+    font-family: "Courier New", monospace;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.boton:hover {
+    transform: scale(1.05);
+    background-color: #FFFFFF;
+}
+
+
+/* ---------- Títulos de sección ---------- */
+.titulo-seccion {
+    margin: 0;
+    line-height: 1.2;
+    font-family: "Courier New", monospace;
+    font-size: 34px;
+    text-align: center;
+}
+
+.subtitulo-seccion {
+    margin-top: 6px;
+    margin-bottom: 40px;
+    color: #B9B4D6;
+    text-align: center;
+}
+
+
+/* ---------- Productos ---------- */
+.productos {
+    padding: 70px 40px;
+    background-color: #15112B;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Clase 2.3: ancho, borde y esquinas. Clase 2.4: padding y box-sizing */
+.tarjeta {
+    width: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1A1633;
+    border: 2px solid #2E2854;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Clase 3.3: la tarjeta crece, cambia el borde y brilla */
+.tarjeta:hover {
+    transform: scale(1.04);
+    border: 2px solid #2EE6D6;
+    box-shadow: 0 0 24px #2EE6D6;
+}
+
+/* Clase 2.3: object-fit evita que la foto se deforme */
+.tarjeta-imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-titulo {
+    margin-bottom: 4px;
+    font-family: "Courier New", monospace;
+    font-size: 22px;
+}
+
+.tarjeta-texto {
+    margin-top: 0;
+    color: #B9B4D6;
+}
+
+.precio {
+    margin: 0;
+    color: #FF4FA3;
+    font-family: "Courier New", monospace;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* ---------- Nosotros ---------- */
+.nosotros {
+    padding: 70px 40px;
+}
+
+/* list-style: none quita las viñetas de la lista */
+/* Clase 2.4: margin y padding en 0 quitan el espacio que trae la lista */
+.lista-beneficios {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 30px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.beneficio {
+    width: 220px;
+    padding: 26px 20px;
+    box-sizing: border-box;
+    background-color: #1A1633;
+    border: 2px solid #2E2854;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.beneficio-icono {
+    width: 64px;
+}
+
+.beneficio-titulo {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #2EE6D6;
+    font-size: 16px;
+}
+
+.beneficio-texto {
+    margin: 0;
+    color: #B9B4D6;
+    font-size: 14px;
+}
+
+
+/* ---------- Consulta ---------- */
+.consulta {
+    padding: 70px 40px;
+    background-color: #15112B;
+}
+
+/* Clase 3.2: flex-direction column pone los campos uno debajo del otro */
+/* Clase 2.4: margin 0 auto centra el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 480px;
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+    background-color: #1A1633;
+    border: 2px solid #2E2854;
+    border-radius: 16px;
+}
+
+.etiqueta {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.campo {
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: #0E0B1F;
+    border: 2px solid #2E2854;
+    border-radius: 8px;
+    color: #E8E6F5;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.campo-mensaje {
+    height: 110px;
+}
+
+/* border: 0 quita el borde que el navegador le pone al botón */
+.boton-enviar {
+    margin-top: 16px;
+    padding: 14px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #2EE6D6;
+    color: #0E0B1F;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.boton-enviar:hover {
+    transform: scale(1.03);
+    background-color: #FFFFFF;
+}
+
+
+/* ---------- Pie de página ---------- */
+.pie {
+    padding: 50px 40px 30px 40px;
+    background-color: #07060F;
+    box-shadow: 0 -2px 0 #2EE6D6;
+    text-align: center;
+}
+
+.pie-nombre {
+    margin: 0;
+    color: #2EE6D6;
+    font-family: "Courier New", monospace;
+    font-size: 28px;
+}
+
+.pie-lema {
+    margin-top: 4px;
+    color: #B9B4D6;
+}
+
+.datos-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 24px;
+}
+
+.dato {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dato-icono {
+    width: 28px;
+}
+
+.dato-texto {
+    margin: 0;
+}
+
+.pie-enlace {
+    color: #2EE6D6;
+    font-weight: bold;
+}
+
+.pie-enlace:hover {
+    color: #FF4FA3;
+}
+
+.creditos {
+    margin-top: 30px;
+    color: #B9B4D6;
+    font-size: 12px;
+}
+
+
+/* ---------- Adaptación al celular ---------- */
+/* Clase 3.4: estas reglas se activan en pantallas de 768px o menos */
+@media (max-width: 768px) {
+
+    .encabezado {
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+    }
+
+    .menu {
+        gap: 2px;
+    }
+
+    .menu-enlace {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
+
+    .presentacion {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 24px;
+    }
+
+    .presentacion-texto {
+        width: 100%;
+        text-align: center;
+    }
+
+    .presentacion-titulo {
+        font-size: 32px;
+    }
+
+    .presentacion-imagen {
+        width: 90%;
+        height: 260px;
+    }
+
+    .titulo-seccion {
+        font-size: 26px;
+    }
+
+    .contenedor-tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista-beneficios {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .beneficio {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .datos-contacto {
+        flex-direction: column;
+        align-items: center;
+        gap: 14px;
+    }
+}
